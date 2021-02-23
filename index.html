@@ -66,16 +66,6 @@
         width: 100% !important;
         max-width: 100%;
       }
-
-      .mj-column-per-33-333333333333336 {
-        width: 33.333333333333336% !important;
-        max-width: 33.333333333333336%;
-      }
-
-      .mj-column-per-50 {
-        width: 50% !important;
-        max-width: 50%;
-      }
     }
   </style>
   <style type="text/css">
@@ -91,6 +81,7 @@
   </style>
   <style type="text/css">
     .bt-image-header-right>table>tbody>tr>td>img {
+      display: inline;
       margin-top: -50px;
     }
 
@@ -130,53 +121,76 @@
       top: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .bt-column-content-main {
+      margin-top: -30px;
+    }
+
+    @media only screen and (max-width: 479px) {
+
+      .bt-header>table .item-header-1,
+      .bt-header>table .item-header-3 {
+        width: 25% !important;
+        float: left;
+      }
+
+      .bt-header>table .item-header-2 {
+        width: 50% !important;
+        float: left;
+      }
+
+      .bt-column-content-main>table>tbody>tr>td {
+        padding: 0 30px !important;
+      }
+
+      .bt-column-content-main {
+        margin-top: 20px !important;
+      }
+
+      .bt-section-bottom .item-column {
+        width: 50% !important;
+        float: left;
+      }
+
+      .bt-section-bottom .item-column .bt-image-ss-footer {
+        padding: 0 0 0 20px !important;
+      }
+
+      .bt-section-bottom .item-column .bt-image-ss-footer>table>tbody>tr>td {
+        width: 100px !important;
+      }
+
+      .bt-image-ss-footer>table>tbody>tr>td>img {
+        margin-bottom: -25px !important;
+      }
+
+      .bt-image-header-right>table>tbody>tr>td>img {
+        margin-top: -20px !important;
+      }
+
+      .bt-title-header-top>div {
+        font-size: 18px !important;
+        line-height: 24px !important;
+      }
+    }
   </style>
 </head>
 
 <body style="word-spacing:normal;background-color:#ffffff;">
   <div style="background-color:#ffffff;">
-    <!-- header top bar -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#be0a2f;background-color:#be0a2f;margin:0px auto;max-width:900px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#be0a2f;background-color:#be0a2f;width:100%;">
-        <tbody>
-          <tr>
-            <td style="direction:ltr;font-size:0px;padding:20px 20px 20px 50px;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:830px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
-                  <tbody>
-                    <tr>
-                      <td align="left" style="font-size:0px;padding:0;word-break:break-word;">
-                        <div style="font-family:Rubik;font-size:20px;font-weight:700;letter-spacing:0.6px;line-height:28px;text-align:left;color:#ffffff;">
-                          <h2 style="padding:0; margin:0;">Congratulations!</h2>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td></tr></table><![endif]-->
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- end header top bar -->
     <!-- header -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:900px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="bt-header-outlook" style="width:750px;" width="750" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="bt-header" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:750px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:300.00000000000006px;" ><![endif]-->
-              <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:750px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
-                      <td style="vertical-align:top;padding:0;">
+                      <td style="vertical-align:top;padding:0 0px 0 0px;">
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
@@ -184,64 +198,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                   <tbody>
                                     <tr>
-                                      <td style="width:300px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-001.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="300" />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300.00000000000006px;" ><![endif]-->
-              <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                  <tbody>
-                    <tr>
-                      <td style="vertical-align:top;padding:0;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="center" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:250px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/01/EWB_Tajikistan-_logo.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="250" />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:300.00000000000006px;" ><![endif]-->
-              <div class="mj-column-per-33-333333333333336 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                  <tbody>
-                    <tr>
-                      <td style="vertical-align:top;padding:0;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="center" class="bt-image-header-right" style="font-size:0px;padding:0;word-break:break-word;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:180px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-002.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="180" />
+                                      <td style="width:750px;">
+                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-006.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="750" />
                                       </td>
                                     </tr>
                                   </tbody>
@@ -264,14 +222,14 @@
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- end header -->
     <!-- section content main -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:900px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:750px;" width="750" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:750px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:900px;" ><![endif]-->
-              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="bt-column-content-main-outlook" style="vertical-align:top;width:750px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix bt-column-content-main" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
@@ -309,8 +267,8 @@
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                   <tbody>
                                     <tr>
-                                      <td style="width:800px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-003.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="800" />
+                                      <td style="width:650px;">
+                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-003.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="650" />
                                       </td>
                                     </tr>
                                   </tbody>
@@ -332,15 +290,15 @@
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
     <!-- end section content main -->
-    <!-- section content main footer -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="margin:0px auto;max-width:900px;">
-      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+    <!-- section content main bottom -->
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="bt-section-bottom-outlook" style="width:750px;" width="750" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div class="bt-section-bottom" style="background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:750px;">
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#ffffff;background-color:#ffffff;width:100%;">
         <tbody>
           <tr>
-            <td style="direction:ltr;font-size:0px;padding:0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:bottom;width:450px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
+            <td style="direction:ltr;font-size:0px;padding:15px 0 0 0;text-align:center;">
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:bottom;width:750px;" ><![endif]-->
+              <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tbody>
                     <tr>
@@ -348,40 +306,12 @@
                         <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
                           <tbody>
                             <tr>
-                              <td align="left" class="bt-image-ss-footer" style="font-size:0px;padding:0 0 0 30px;word-break:break-word;">
+                              <td align="left" class="bt-image-ss-footer" style="font-size:0px;padding:0 0 0 0px;word-break:break-word;">
                                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
                                   <tbody>
                                     <tr>
-                                      <td style="width:150px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-004.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="150" />
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--[if mso | IE]></td><td class="" style="vertical-align:bottom;width:450px;" ><![endif]-->
-              <div class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:bottom;width:100%;">
-                <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                  <tbody>
-                    <tr>
-                      <td style="vertical-align:bottom;padding:0;">
-                        <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="" width="100%">
-                          <tbody>
-                            <tr>
-                              <td align="center" style="font-size:0px;padding:0;word-break:break-word;">
-                                <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="width:450px;">
-                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-005.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="450" />
+                                      <td style="width:750px;">
+                                        <img height="auto" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-008.jpg" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;" width="750" />
                                       </td>
                                     </tr>
                                   </tbody>
@@ -402,15 +332,15 @@
       </table>
     </div>
     <!--[if mso | IE]></td></tr></table><![endif]-->
-    <!-- end section content main footer -->
+    <!-- end section content main bottom -->
     <!-- footer -->
-    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:900px;" width="900" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
-    <div style="background:#002768;background-color:#002768;margin:0px auto;max-width:900px;">
+    <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:750px;" width="750" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+    <div style="background:#002768;background-color:#002768;margin:0px auto;max-width:750px;">
       <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#002768;background-color:#002768;width:100%;">
         <tbody>
           <tr>
             <td style="direction:ltr;font-size:0px;padding:30px 0 15px 0;text-align:center;">
-              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:900px;" ><![endif]-->
+              <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:750px;" ><![endif]-->
               <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                 <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                   <tbody>
@@ -420,7 +350,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td align="center" class="social-footer" style="font-size:0px;padding:10px 25px;word-break:break-word;">
+                      <td align="center" class="social-footerr" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                         <!--[if mso | IE]><table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" ><tr><td><![endif]-->
                         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="float:none;display:inline-table;">
                           <tr class="item">

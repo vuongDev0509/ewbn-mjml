@@ -6,7 +6,8 @@
             <mj-all font-family="Rubik" />
         </mj-attributes>
         <mj-style> 
-            .bt-image-header-right > table > tbody > tr > td > img{
+            .bt-image-header-right>table>tbody>tr>td>img{
+                display: inline;
                 margin-top: -50px;
             }
             .bt-image-ss-footer > table > tbody > tr > td > img{
@@ -39,37 +40,61 @@
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
+            .bt-column-content-main{
+                margin-top: -30px;
+            }
+            @media only screen and (max-width: 479px){
+                .bt-header > table .item-header-1,  .bt-header > table .item-header-3{
+                    width: 25% !important;
+                    float: left;
+                }
+                .bt-header > table .item-header-2{
+                    width: 50% !important;
+                    float: left;
+                }
+                .bt-column-content-main > table > tbody > tr > td{
+                    padding: 0 30px !important;
+                    
+                }
+                .bt-column-content-main {
+                    margin-top:20px !important;
+                }
+                .bt-section-bottom .item-column{
+                    width: 50% !important;
+                    float: left;
+                }
+                .bt-section-bottom .item-column .bt-image-ss-footer{
+                     padding: 0 0 0 20px !important;
+                }
+                .bt-section-bottom .item-column .bt-image-ss-footer > table > tbody > tr > td{
+                    width: 100px !important;
+                } 
+                .bt-image-ss-footer>table>tbody>tr>td>img{
+                    margin-bottom: -25px !important;
+                }
+                .bt-image-header-right>table>tbody>tr>td>img{
+                    margin-top: -20px !important;
+                }
+                .bt-title-header-top > div{
+                    font-size: 18px !important;
+                    line-height: 24px !important;
+                }
+            }
         </mj-style>
     </mj-head>
-    <mj-body background-color="#fff" width="900px">
-        <!-- header top bar -->
-        <mj-section background-color="#be0a2f" padding="20px 20px 20px 50px">
-            <mj-column>
-                <mj-text font-weight="700" color="#fff" font-size="20px" line-height="28px" padding="0"
-                        letter-spacing="0.6px"> 
-                    <h2 style="padding:0; margin:0;">Congratulations!</h2>
-                </mj-text>
-            </mj-column>
-        </mj-section>
-        <!-- end header top bar -->
+    <mj-body background-color="#fff" width="750px">
+       
         <!-- header -->
-        <mj-section padding="0">
-            <mj-column vertical-align="top" padding="0">
-                <mj-image src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-001.png" /
-                    padding="0">
-            </mj-column>
-            <mj-column padding="0"> 
-                <mj-image  src="https://ewbn.org/wp-content/uploads/2021/01/EWB_Tajikistan-_logo.png" />
-            </mj-column>
-            <mj-column padding="0" vertical-align="top">
-                 <mj-image  src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-002.png" / 
-                    align="center" css-class="bt-image-header-right" padding="0" width="180px">
+        <mj-section padding="0" css-class="bt-header" background-color="#fff">
+            <mj-column padding="0 0px 0 0px" vertical-align="top">
+                 <mj-image src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-006.jpg" / 
+                    align="center" padding="0">
             </mj-column>
         </mj-section>
         <!-- end header -->
         <!-- section content main -->
-        <mj-section padding="0">
-            <mj-column  padding="0 50px 0 50px">
+        <mj-section padding="0" background-color="#fff">
+            <mj-column  padding="0 50px 0 50px" css-class="bt-column-content-main">
                 <mj-text color="#002768" font-size="18px" line-height="25px" letter-spacing="0.16px"
                     padding="0" font-weight="400"> 
                     You are now a member of the English Without Borders Network. We are thrilled to have you as part of the EWB and can’t wait to get to know you. 
@@ -94,17 +119,14 @@
             </mj-column>
         </mj-section>
         <!-- end section content main -->
-        <!-- section content main footer -->
-        <mj-section padding="0">
+        <!-- section content main bottom -->
+        <mj-section padding="15px 0 0 0" css-class="bt-section-bottom" background-color="#fff">
             <mj-column vertical-align="bottom" padding="0">
-               <mj-image width="150px" padding="0 0 0 30px" align="left" css-class="bt-image-ss-footer"
-                        src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-004.png" /> 
-            </mj-column>
-            <mj-column vertical-align="bottom" padding="0">
-                <mj-image padding="0" src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-005.jpg" /> 
+               <mj-image  padding="0 0 0 0px" align="left" css-class="bt-image-ss-footer"
+                        src="https://ewbn.org/wp-content/uploads/2021/02/image-emal-008.jpg" /> 
             </mj-column>
         </mj-section>
-        <!-- end section content main footer -->
+        <!-- end section content main bottom -->
         <!-- footer -->
         <mj-section padding="30px 0 15px 0" background-color="#002768">
             <mj-column>
@@ -112,7 +134,7 @@
                     line-height="24px" font-weight="400" letter-spacing="0.16px">
                     Follow us on social media to keep up-to-date with our programs and events!
                 </mj-text>
-                <mj-social css-class="social-footer" border-radius="100px" icon-size="35px" mode="horizontal">
+                <mj-social css-class="social-footerr" border-radius="100px" icon-size="35px" mode="horizontal">
                     <mj-social-element css-class="item" background-color="#3b5999" name="facebook" href="#!"></mj-social-element>
                     <mj-social-element css-class="item" background-color="#dc4b38" name="instagram" href="#!"></mj-social-element>
                     <mj-social-element css-class="item" background-color="#55acef" name="twitter" href="#!"></mj-social-element>
